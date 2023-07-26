@@ -1,0 +1,120 @@
+
+@import '../../App.scss';
+
+.nav-bar {
+  background-color: $off-white;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+  display: block;
+  padding: 8px 0;
+  width: 100%;
+  text-align: center;
+
+    img {
+    display: block;
+    margin: 8px auto;
+    width: 200px;
+
+    }
+  }
+}
+
+nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -120px;
+  width: 100%;
+
+  a {
+    font-size: 22px;
+    color:$primary-pink;
+    display: block;
+    line-height: 50px;
+    font-weight: lighter;
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      color: $primary-pink;
+      font-family: $poppins;
+      font-weight: $normal-font;
+    
+      svg {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+    
+    &:after {
+      content: '';
+      font-size:14px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      opacity: 0;
+      text-align: center;
+    }
+
+    &:first-child {
+      &:after {
+        content: 'HOME';
+      }
+    }
+  }
+
+  a.about-link {
+    &:after {
+      content: 'ABOUT';
+    }
+  }
+
+  a.contact-link {
+    &:after {
+      content: 'CONTACT';
+    }
+  }
+}
+
+ul {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+
+  li {
+    a {
+      color: $light-grey;
+      padding: 7px 0;
+      display: block;
+      font-size: 18px;
+      line-height: 16px;
+
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+  }
+}

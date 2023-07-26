@@ -1,0 +1,29 @@
+$primary-pink: #f17f97;
+$primary-teal: rgb(49, 112, 112);
+$off-white: #f7f1f1;
+$light-grey: #727171;
+$dark-grey: #3a3a3a;
+
+$poppins: 'Poppins', sans-serif;
+$lighter-font: 200;
+$normal-font: 300;
+
+
+@import 'animate.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+
+body {
+  background-color: $primary-teal;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  display: block;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
