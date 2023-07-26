@@ -1,16 +1,15 @@
-
-import './App.scss';
-import { Routes, Route } from "react-router-dom"
-import Layout from './components/Layout'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Contact from './components/Contact'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-
-      </Route>
-    </Routes>
-  );
+    <div>
+      <Navbar />
+      <Home />
+      <Contact />
+    </div>
+  )
 }
 
 export default App;
